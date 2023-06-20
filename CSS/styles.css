@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    font-family: Nunito;
+    display: block;
+    margin: 8px;
+}
+
+section {
+    display: block;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#jogadorasList ,#jogadoresList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+    max-width: 1200px;
+    margin: 0px 2em;
+    align-content: center;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #jogadorasList, #jogadoresList  {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1025px) {
+    #jogadorasList, #jogadoresList  {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+}
+
+h5 {
+    font-family: "Nunito Sans";
+    text-align: center;
+    margin: 0.5em 0px;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    overflow: clip;
+}
+
+#imagem {
+    width: 15%;
+}
